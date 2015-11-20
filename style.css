@@ -1,0 +1,58 @@
+.dc-chart g.row text {
+    fill: black;
+    font-size: 10px;
+}
+
+.dc-chart g.row rect {
+    stroke: gray;
+    font-size: 10px;
+}
+
+.filterName {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.reset {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.table {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.table > tbody > tr > td {
+    line-height: 6px;
+}
+
+/*seasons pie chart*/
+.dc-chart .pie-slice {
+    fill: black;
+    font-size: 10px;    
+}
+
+/*to allow x-axis labels to overflow past div bd*/
+svg:not(:root) {
+    overflow: unset;
+}
+
+#chart-category {    
+    transform: translate(20px, 0px);
+}
+#chart-area {    
+    transform: translate(20px, 0px);
+}
+
+/*modify twitter bootstrap btn*/
+.btn:hover, .btn:focus {
+    color: #333333;
+    text-decoration: none;
+    background: lightgray;
+    border: 1px solid gray;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>    
+
+    <title>fMRI</title>
+    
+    <!-- d3 and dc -->    
+    <script src="lib/d3.v3.min.js"/></script>
+    <script src="lib/crossfilter.js"></script>
+    <script src="lib/dc.js"></script>
+    <link rel="stylesheet" href="lib/dc.css" />
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/colorbrewer.js"></script>
+
+    <!-- css links -->
+    <link href="lib/bootstrap-3.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="lib/bootstrap-3.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">    
+
+    <script src="lib/highstock.js"></script>
+    <script src="lib/exporting.js"></script>
+
+    <!-- jQWidgets -->
+    <!-- add the jQWidgets framework -->
+    <link rel="stylesheet" href="lib/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="lib/jqxcore.js"></script>    
+    <script type="text/javascript" src="lib/jqxwindow.js"></script>
+    <script type="text/javascript" src="lib/jqxtabs.js"></script>
+    <script type="text/javascript" src="lib/jqxpanel.js"></script>    
+    
+
+    <script type="text/javascript" src="setup.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+    <!--pace.js progress bar-->
+    <script src="lib/pace.js"></script>
+    <link href="style-pace-fill-left.css" rel="stylesheet" />
+
+    <script src="lib/math.min.js"></script>
+
+
+    <style>
+        #holder {
+          width:850px;
+          margin:20px auto;
+        }
+        #holder>div {
+          padding:30px 0;
+          clear:both;
+        }
+        .pie {
+          margin-left:30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">fMRI</a>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <!-- Begin page content -->
+        <div class="container">
+   
+            <div class="row">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo pretium urna, sed lobortis lorem venenatis nec. Integer commodo a massa vitae consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam commodo pretium urna, sed lobortis lorem venenatis nec. Integer commodo a massa vitae consectetur.
+            </div>
+            <p><p><p><p><p><p><p><p>
+
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                    <p><p><p><p><p><p><p><p>
+                    <p><p><p><p><p><p><p><p>
+                        <p>
+                    
+                </div> <!--col class-->
+            </div> <!--row-->
+
+
+            <div class="panel panel-default panel-transparent">
+                <div class="panel-body">
+
+            <!--ROW 1-->
+            <div class="row">
+                <div class="col-lg-12">
+                    Subject 2 experienced the most severe pain during axial load. Click on Subject 2 in the "Subject" chart to see how this subject differs from the others.<p>
+                </div>
+            </div>
+
+            <div class="row">    
+                <div id="chart-category" class="dc-chart col-md-2">
+                    <div class="filterName">Subject Category
+                        <a class="reset" href="javascript:categoryChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                        <span class="reset" style="display: none;"></span>
+                    </div>    
+                </div>  
+                   
+                <div id="chart-subject" class="dc-chart col-md-4">
+                    <div class="filterName">Subject
+                        <a class="reset" href="javascript:subjectChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                        <span class="reset" style="display: none;"></span>
+                    </div>
+                </div>
+
+                <div id="chart-run" class="dc-chart col-md-4">
+                    <div class="filterName">Run
+                        <a class="reset" href="javascript:runChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                        <span class="reset" style="display: none;"></span>
+                    </div>
+                </div>
+
+                
+
+            </div> <!--end row-->    
+                   
+            <div class="row">    
+                
+
+                <div id="chart-area" class="dc-chart col-md-4">
+                    <div class="filterName">Brain area
+                        <a class="reset" href="javascript:areaChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                        <span class="reset" style="display: none;"></span>
+                    </div>
+                </div>   
+
+                <div id="chart-stackedPower" class="dc-chart col-md-4">
+                    <div class="filterName">Spectral power relative to run 1 for two spectral bands
+                        <a class="reset" href="javascript:stackedPowerChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+                        <span class="reset" style="display: none;"></span>
+                    </div>
+                </div>           
+                                    
+                
+            </div><!--end row-->
+               
+                    
+               
+                
+                  
+  
+                 
+
+
+                </div><!--panel body-->
+            </div><!--panel default-->
+
+           
+               
+
+        </div> <!-- /.container -->
+
+    </div>  <!-- /.wrap -->
+    <p><p>
+
+    <div id="footer">
+        <div class="container">
+            Version 0.1 - Nov 2015</p>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+</html>
